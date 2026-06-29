@@ -43,3 +43,19 @@ Each script appends new data to the existing CSV rather than creating a new file
 - Tableau dashboards published to [Tableau Public](#) *(link to be added)*
 - 1-page Market Intelligence Report
 - 5-minute live presentation
+
+
+
+## Weekly Progress
+
+### Week 0 – Setup and Data Orientation
+- Set up Python and VS Code environment.
+- Verified that local MLS CSV files can be loaded with Pandas.
+- Reviewed available listing and sold dataset fields.
+
+### Week 1 – Monthly Dataset Aggregation
+- Combined monthly CRMLS Listing files from January 2024 through May 2026.
+- Selected one Sold file per month, preferring `_filled` files when available.
+- Filtered both Listings and Sold datasets to `PropertyType == "Residential"`.
+- Saved combined Residential datasets locally in the `processed/` folder.
+- Raw and processed CSV files are excluded from GitHub for confidentiality.
