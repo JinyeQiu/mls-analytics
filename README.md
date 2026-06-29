@@ -38,14 +38,6 @@ This project builds a full analytics pipeline:
 
 Each script appends new data to the existing CSV rather than creating a new file each week.
 
-## Final Deliverables
-
-- Tableau dashboards published to [Tableau Public](#) *(link to be added)*
-- 1-page Market Intelligence Report
-- 5-minute live presentation
-
-
-
 ## Weekly Progress
 
 ### Week 0 – Setup and Data Orientation
@@ -59,3 +51,9 @@ Each script appends new data to the existing CSV rather than creating a new file
 - Filtered both Listings and Sold datasets to `PropertyType == "Residential"`.
 - Saved combined Residential datasets locally in the `processed/` folder.
 - Raw and processed CSV files are excluded from GitHub for confidentiality.
+
+## Final Deliverables
+
+- Tableau dashboards published to [Tableau Public](#) *(link to be added)*
+- 1-page Market Intelligence Report
+- 5-minute live presentation
