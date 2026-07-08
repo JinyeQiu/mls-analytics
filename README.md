@@ -52,6 +52,16 @@ Each script appends new data to the existing CSV rather than creating a new file
 - Saved combined Residential datasets locally in the `processed/` folder.
 - Raw and processed CSV files are excluded from GitHub for confidentiality.
 
+### Week 2 – Data Audit and Column Cleaning
+- Audited combined Residential Listing and Sold datasets for missing values.
+- Generated missingness reports for both datasets.
+- Dropped columns with more than 90% missing values based on project guidance.
+- Saved cleaned Week 2 datasets in the `processed/` folder.
+- Cleaned Listings dataset: 591,979 rows and 72 columns.
+- Cleaned Sold dataset: 430,428 rows and 70 columns.
+- Reviewed dropped columns and confirmed that key size fields such as `LivingArea`, `MLSAreaMajor`, `LotSizeAcres`, `LotSizeArea`, and `LotSizeSquareFeet` were retained.
+- Raw and processed CSV files remain excluded from GitHub for confidentiality.
+
 ## Final Deliverables
 
 - Tableau dashboards published to [Tableau Public](#) *(link to be added)*
