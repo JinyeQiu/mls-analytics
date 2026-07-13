@@ -63,16 +63,16 @@ Each script appends new data to the existing CSV rather than creating a new file
 - Raw and processed CSV files remain excluded from GitHub for confidentiality.
 
 ### Week 3 – Numeric EDA and Mortgage Rate Enrichment
-Conducted numeric exploratory data analysis on the cleaned Residential Listing and Sold datasets.
-Generated numeric summary reports and plots, saved locally in the processed/ folder.
-Retrieved weekly 30-year fixed mortgage rates from FRED and calculated monthly averages.
-Merged mortgage rates with Listings using ListingContractDate and Sold records using CloseDate.
-Validated that Listings retained 591,979 rows before and after the merge.
-Validated that Sold retained 430,428 rows before and after the merge.
-Confirmed that there were no invalid or missing dates and no unmatched mortgage rates.
-Mortgage-rate coverage spans January 2024 through May 2026, and every property record received a rate.
-Added py/week3_numeric_eda.py and py/week3_mortgage_rate_enrichment.py to the repository.
-Large processed and enriched CSV files remain excluded from GitHub for confidentiality.
+- Conducted numeric exploratory data analysis on the cleaned Residential Listing and Sold datasets.
+- Generated numeric summary reports and plots, saved locally in the processed/ folder.
+- Retrieved weekly 30-year fixed mortgage rates from FRED and calculated monthly averages.
+- Merged mortgage rates with Listings using ListingContractDate and Sold records using CloseDate.
+- Validated that Listings retained 591,979 rows before and after the merge.
+- Validated that Sold retained 430,428 rows before and after the merge.
+- Confirmed that there were no invalid or missing dates and no unmatched mortgage rates.
+- Mortgage-rate coverage spans January 2024 through May 2026, and every property record received a rate.
+- Added py/week3_numeric_eda.py and py/week3_mortgage_rate_enrichment.py to the repository.
+- Large processed and enriched CSV files remain excluded from GitHub for confidentiality.
 
 ## Final Deliverables
 
