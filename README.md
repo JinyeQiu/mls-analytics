@@ -23,20 +23,27 @@ This project builds a full analytics pipeline:
 
 ## Repository Contents
 
-| File | Description |
-|------|-------------|
-| `crmls_listed.py` | Pulls and updates the listings dataset (CSV) |
-| `crmls_sold.py` | Pulls and updates the sold transactions dataset (CSV) |
-
-> Note: Raw CSV data files are not included in this repository.
+```text
+mls-analytics/
+├── README.md
+├── .gitignore
+└── py/
+    ├── week0_test.py
+    ├── week1.py
+    ├── week1_merge.py
+    ├── week2_data_audit.py
+    ├── week2_clean_columns.py
+    ├── week3_numeric_eda.py
+    ├── week3_mortgage_rate_enrichment.py
+    └── week4_5_data_cleaning.py
 
 ## How to Run
 
-1. Make sure Python and Pandas are installed:
-2. Run the listings script:
-3. Run the sold script:
+The scripts are designed to run from the local internship project folder:
 
-Each script appends new data to the existing CSV rather than creating a new file each week.
+```bash
+cd /Users/tq/Desktop/da54/Files
+python3 py/<script_name>.py
 
 ## Weekly Progress
 
@@ -74,6 +81,21 @@ Each script appends new data to the existing CSV rather than creating a new file
 - Confirmed mortgage-rate coverage from January 2024 through May 2026, with every property record receiving a rate.
 - Added `py/week3_numeric_eda.py` and `py/week3_mortgage_rate_enrichment.py` to the repository.
 - Large processed and enriched CSV files remain excluded from GitHub for confidentiality.
+
+### Weeks 4–5 – Data Cleaning and Preparation
+
+- Converted required transaction date fields to datetime format.
+- Confirmed that numeric analysis fields were properly typed.
+- Consolidated and removed 11 fully redundant `.1` columns from the Listings dataset.
+- Confirmed that the redundant columns contained no unique or conflicting values.
+- Flagged invalid price, living-area, days-on-market, bedroom, and bathroom values.
+- Replaced invalid numeric values with missing values while retaining the original records.
+- Added date-consistency flags for invalid listing, contract, and closing timelines.
+- Added geographic quality flags for missing, zero, positive-longitude, and implausible California coordinates.
+- Preserved all 591,979 Listings rows and 430,428 Sold rows.
+- Saved cleaned datasets and validation reports locally in the `processed/` folder.
+- Added `py/week4_5_data_cleaning.py` to the repository.
+- Large processed CSV files remain excluded from GitHub for confidentiality.
 
 ## Final Deliverables
 
