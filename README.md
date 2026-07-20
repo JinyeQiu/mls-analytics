@@ -36,6 +36,9 @@ mls-analytics/
     ├── week3_numeric_eda.py
     ├── week3_mortgage_rate_enrichment.py
     └── week4_5_data_cleaning.py
+```
+
+> Raw MLS files, processed datasets, validation reports, and plots remain local and are excluded from GitHub for confidentiality.
 
 ## How to Run
 
@@ -44,6 +47,9 @@ The scripts are designed to run from the local internship project folder:
 ```bash
 cd /Users/tq/Desktop/da54/Files
 python3 py/<script_name>.py
+```
+
+Each phase uses the locally generated outputs from the previous phase. Raw and processed MLS datasets are not included in this public repository.
 
 ## Weekly Progress
 
