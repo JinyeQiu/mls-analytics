@@ -103,6 +103,21 @@ Each phase uses the locally generated outputs from the previous phase. Raw and p
 - Added `py/week4_5_data_cleaning.py` to the repository.
 - Large processed CSV files remain excluded from GitHub for confidentiality.
 
+### Week 6 – Feature Engineering and Market Metrics
+
+- Engineered `PriceRatio` and `CloseToOriginalListRatio` using `ClosePrice / OriginalListPrice`.
+- Calculated `PricePerSqFt` using `ClosePrice / LivingArea`.
+- Retained `DaysOnMarket` as the raw time-to-sell measure.
+- Derived `Year`, `Month`, and `YrMo` from `CloseDate`.
+- Calculated listing-to-contract and contract-to-close durations.
+- Flagged negative date intervals and replaced invalid engineered durations with missing values while retaining the original records.
+- Generated segmented summaries by property type, property subtype, county, MLS area, listing office, and buyer office.
+- Preserved all 430,428 Sold records before and after feature engineering.
+- Identified extreme positive values for systematic outlier analysis in Week 7 rather than applying arbitrary cutoffs.
+- Saved the engineered dataset, sample output, feature summary, and segment summaries locally in the `processed/` folder.
+- Added `py/week6_feature_engineering.py` to the repository.
+- Large processed CSV files remain excluded from GitHub for confidentiality.
+
 ## Final Deliverables
 
 - Tableau dashboards published to [Tableau Public](#) *(link to be added)*
