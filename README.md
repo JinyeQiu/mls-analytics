@@ -118,6 +118,20 @@ Each phase uses the locally generated outputs from the previous phase. Raw and p
 - Added `py/week6_feature_engineering.py` to the repository.
 - Large processed CSV files remain excluded from GitHub for confidentiality.
 
+### Week 7 – Outlier Detection and Data Quality Validation
+
+- Applied the standard 1.5 × IQR method to `ClosePrice`, `LivingArea`, and `DaysOnMarket`.
+- Calculated Q1, median, Q3, IQR, lower and upper bounds, selected percentiles, and field-level outlier counts.
+- Added separate Boolean outlier flags for each field and a combined exclusion flag.
+- Reused the established business-rule flags from Weeks 4–5 while ensuring that missing values alone were not classified as outliers.
+- Preserved all 430,428 Sold records in the full flagged dataset.
+- Created a filtered analysis dataset containing 362,646 records after excluding 67,782 records, or 15.75% of the full dataset.
+- Observed median changes from $825,000 to $785,000 for `ClosePrice`, 1,644 to 1,570 square feet for `LivingArea`, and 18 to 16 days for `DaysOnMarket`.
+- Retained excluded observations in the flagged dataset because statistical outliers may represent legitimate transactions rather than data errors.
+- Saved the flagged dataset, filtered dataset, IQR threshold report, and before-and-after comparison reports locally in the `processed/` folder.
+- Added `py/week7_outlier_detection.py` to the repository.
+- Large processed CSV files remain excluded from GitHub for confidentiality.
+
 ## Final Deliverables
 
 - Tableau dashboards published to [Tableau Public](#) *(link to be added)*
