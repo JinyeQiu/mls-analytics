@@ -35,7 +35,10 @@ mls-analytics/
     ├── week2_clean_columns.py
     ├── week3_numeric_eda.py
     ├── week3_mortgage_rate_enrichment.py
-    └── week4_5_data_cleaning.py
+    ├── week4_5_data_cleaning.py
+    ├── week6_feature_engineering.py
+    ├── week7_outlier_detection.py
+    └── week8_tableau_data_preparation.py
 ```
 
 > Raw MLS files, processed datasets, validation reports, and plots remain local and are excluded from GitHub for confidentiality.
@@ -131,6 +134,26 @@ Each phase uses the locally generated outputs from the previous phase. Raw and p
 - Saved the flagged dataset, filtered dataset, IQR threshold report, and before-and-after comparison reports locally in the `processed/` folder.
 - Added `py/week7_outlier_detection.py` to the repository.
 - Large processed CSV files remain excluded from GitHub for confidentiality.
+
+### Week 8 – Tableau Data Preparation and Market Dashboard Development
+
+- Created a unified, long-format Tableau event table combining new-listing and closed-sale activity.
+- Generated 591,979 new-listing event rows using `ListingContractDate`.
+- Generated 362,646 closed-sale event rows using `CloseDate`.
+- Combined 954,625 total market-event rows covering January 2024 through May 2026.
+- Derived standardized event date, month, year, and year-month fields for monthly analysis.
+- Standardized city, county, ZIP code, and property-subtype dimensions so the same filters could be applied across all Tableau worksheets.
+- Confirmed that all required dashboard filter fields were at least 99.77% populated.
+- Identified implausible `CloseToOriginalListRatio` values caused by placeholder `OriginalListPrice` entries.
+- Set 1,517 ratios outside the plausible 0.50–1.50 range to missing for ratio analysis without removing their closed-sale records from other measures.
+- Retained 360,582 valid close-to-original-list ratios, representing 99.43% of closed-sale events.
+- Built five monthly Tableau worksheets for new listings, closed sales, median close price, average days on market, and average close-to-original-list ratio.
+- Created the `Market Analysis` dashboard with shared city, county, ZIP code, and property-subtype filters.
+- Verified that all five charts update correctly when the shared geographic filters are changed.
+- Saved the Tableau packaged workbook locally as `tableau/market_analysis.twbx`.
+- Saved the Tableau-ready dataset and validation reports locally in the `processed/` folder.
+- Added `py/week8_tableau_data_preparation.py` to the repository.
+- The packaged workbook and processed MLS datasets remain local and are excluded from GitHub for confidentiality.
 
 ## Final Deliverables
 
