@@ -38,7 +38,8 @@ mls-analytics/
     ├── week4_5_data_cleaning.py
     ├── week6_feature_engineering.py
     ├── week7_outlier_detection.py
-    └── week8_tableau_data_preparation.py
+    ├── week8_tableau_data_preparation.py
+    └── week9_10_competitive_tableau_preparation.py
 ```
 
 > Raw MLS files, processed datasets, validation reports, and plots remain local and are excluded from GitHub for confidentiality.
@@ -154,6 +155,30 @@ Each phase uses the locally generated outputs from the previous phase. Raw and p
 - Saved the Tableau-ready dataset and validation reports locally in the `processed/` folder.
 - Added `py/week8_tableau_data_preparation.py` to the repository.
 - The packaged workbook and processed MLS datasets remain local and are excluded from GitHub for confidentiality.
+
+### Weeks 9–10 – Competitive Analysis and Tableau Dashboard Completion
+
+- Prepared a dedicated Tableau-ready competitive-analysis dataset from the Week 7 filtered Residential Sold dataset.
+- Loaded 362,646 Sold records and retained 362,339 unique transactions after applying the January 2024 date requirement, validating close prices, and resolving duplicate `ListingKey` records.
+- Identified 609 rows associated with 303 duplicated `ListingKey` values before de-duplication.
+- Reviewed duplicate-record conflicts, including 60 listing keys with conflicting close prices and 26 with conflicting listing agents; no duplicate listing keys had conflicting listing offices.
+- Confirmed 362,339 distinct transaction keys after de-duplication so sales volume and unit rankings would not be inflated by duplicate MLS records.
+- Identified 88,346 distinct listing agents, 17,803 distinct listing offices, and 1,592 ZIP codes in the competitive-analysis dataset.
+- Confirmed 100% coverage for listing agent, listing agent key, listing office, county, close price, and close date fields.
+- Confirmed 99.93% city coverage and 99.80% property-subtype coverage, with ZIP code coverage effectively complete.
+- Created Top 100 listing-agent rankings by sales volume and closed-sale units.
+- Created Top 100 listing-office rankings by sales volume and closed-sale units.
+- Added shared city, county, ZIP code, and property-subtype filters and configured context filters so Top 100 rankings recalculate within the selected market.
+- Created a ZIP-code filled map of median close prices with month, city, county, ZIP code, and property-subtype filters.
+- Created a ZIP-code filled map of homes sold using the same geographic and monthly filters.
+- Created the `Competitive Analysis` dashboard combining agent rankings, office rankings, median-price geography, and transaction-volume geography.
+- Added a new `Monthly Median Price Per Sq Ft` worksheet to the market-analysis workbook.
+- Created the custom `Market Conditions Overview` dashboard combining median close price, median price per square foot, average days on market, and average close-to-original-list ratio.
+- Completed the two packaged Tableau workbooks required for Weeks 8–10: `market_analysis.twbx` and `competitive_analysis.twbx`.
+- Saved the Tableau-ready competitive dataset and validation reports locally in the `processed/` folder.
+- Added `py/week9_10_competitive_tableau_preparation.py` to the repository.
+- Packaged Tableau workbooks and processed MLS datasets remain local and are excluded from GitHub to protect the underlying MLS data.
+
 
 ## Final Deliverables
 
