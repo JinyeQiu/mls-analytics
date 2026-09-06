@@ -40,6 +40,8 @@ mls-analytics/
     ├── week7_outlier_detection.py
     ├── week8_tableau_data_preparation.py
     └── week9_10_competitive_tableau_preparation.py
+└── reports/
+    └── Los_Angeles_Market_Intelligence_Report_Week11.pdf
 ```
 
 > Raw MLS files, processed datasets, validation reports, and plots remain local and are excluded from GitHub for confidentiality.
@@ -178,6 +180,24 @@ Each phase uses the locally generated outputs from the previous phase. Raw and p
 - Saved the Tableau-ready competitive dataset and validation reports locally in the `processed/` folder.
 - Added `py/week9_10_competitive_tableau_preparation.py` to the repository.
 - Packaged Tableau workbooks and processed MLS datasets remain local and are excluded from GitHub to protect the underlying MLS data.
+
+### Week 11 – Market Intelligence Analysis and Report Development
+
+- Selected Los Angeles as the focus market for the final Market Intelligence Report.
+- Filtered the completed Tableau market and competitive dashboards to Los Angeles while retaining the full January 2024 through May 2026 analysis period.
+- Extracted the complete 29-month series for median close price, median price per square foot, average days on market, average close-to-original-list ratio, new listings, and closed sales.
+- Found that median close price increased from $876,500 in January 2024 to $969,000 in May 2026, while showing substantial month-to-month variation across the period.
+- Found that median price per square foot increased from $661 to $700, with a period high of $747 in June 2025.
+- Identified changing market-speed conditions: average days on market fell to 23.90 days in June 2024, rose to 35.50 days in January 2026, and ended at 28.25 days in May 2026.
+- Confirmed that homes generally sold close to their original list prices, with the average close-to-original-list ratio ranging from approximately 97.6% to 101.5% during the analysis period.
+- Analyzed monthly market activity and identified clear seasonal variation in both new listings and closed sales.
+- Recorded 1,314 new listings and 537 closed sales in May 2026, compared with 871 new listings and 368 closed sales in January 2024.
+- Reviewed the Los Angeles competitive landscape using listing-agent and listing-office rankings by both sales volume and closed-sale units.
+- Identified Tracy B Do as the leading listing agent with approximately $196 million in sales volume and 152 closed-sale units, followed by Stephanie Younger with approximately $180 million and 117 units.
+- Identified inconsistent capitalization in listing-office names, including `Compass` and `COMPASS`, and created a normalized office-name field in Tableau using `UPPER(TRIM([List Office Name]))` to prevent the same office from being counted separately.
+- After office-name normalization, identified Compass as the leading Los Angeles listing office with approximately $2.893 billion in sales volume and 2,182 closed-sale units.
+- Completed a one-page Los Angeles Market Intelligence Report covering market overview, pricing trends, market activity, competitive landscape, and key data-driven takeaways.
+- Began preparing the final internship deliverables for Week 12, including Tableau Public publication and the five-minute final presentation.
 
 
 ## Final Deliverables
