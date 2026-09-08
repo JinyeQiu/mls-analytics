@@ -27,31 +27,29 @@ This project builds a full analytics pipeline:
 mls-analytics/
 ├── README.md
 ├── .gitignore
-└── py/
-    ├── week0_test.py
-    ├── week1.py
-    ├── week1_merge.py
-    ├── week2_data_audit.py
-    ├── week2_clean_columns.py
-    ├── week3_numeric_eda.py
-    ├── week3_mortgage_rate_enrichment.py
-    ├── week4_5_data_cleaning.py
-    ├── week6_feature_engineering.py
-    ├── week7_outlier_detection.py
-    ├── week8_tableau_data_preparation.py
-    └── week9_10_competitive_tableau_preparation.py
+├── py/
+│   ├── week0_test.py
+│   ├── week1.py
+│   ├── week1_merge.py
+│   ├── week2_data_audit.py
+│   ├── week2_clean_columns.py
+│   ├── week3_numeric_eda.py
+│   ├── week3_mortgage_rate_enrichment.py
+│   ├── week4_5_data_cleaning.py
+│   ├── week6_feature_engineering.py
+│   ├── week7_outlier_detection.py
+│   ├── week8_tableau_data_preparation.py
+│   └── week9_10_competitive_tableau_preparation.py
 └── reports/
     └── Los_Angeles_Market_Intelligence_Report_Week11.pdf
 ```
-
-> Raw MLS files, processed datasets, validation reports, and plots remain local and are excluded from GitHub for confidentiality.
+> Raw and processed MLS datasets, validation files, and local working Tableau workbooks are excluded from GitHub for confidentiality. Public-facing Tableau versions contain only the finalized dashboards and were published according to program guidance.
 
 ## How to Run
 
-The scripts are designed to run from the local internship project folder:
+Run scripts from the local project root:
 
 ```bash
-cd /Users/tq/Desktop/da54/Files
 python3 py/<script_name>.py
 ```
 
@@ -179,7 +177,7 @@ Each phase uses the locally generated outputs from the previous phase. Raw and p
 - Completed the two packaged Tableau workbooks required for Weeks 8–10: `market_analysis.twbx` and `competitive_analysis.twbx`.
 - Saved the Tableau-ready competitive dataset and validation reports locally in the `processed/` folder.
 - Added `py/week9_10_competitive_tableau_preparation.py` to the repository.
-- Packaged Tableau workbooks and processed MLS datasets remain local and are excluded from GitHub to protect the underlying MLS data.
+- Local working Tableau workbooks and processed MLS datasets remain excluded from GitHub to protect the underlying MLS data. Final public-facing dashboard versions were published separately to Tableau Public according to program guidance.
 
 ### Week 11 – Market Intelligence Analysis and Report Development
 
@@ -202,6 +200,7 @@ Each phase uses the locally generated outputs from the previous phase. Raw and p
 
 ## Final Deliverables
 
-- Tableau dashboards published to [Tableau Public](#) *(link to be added)*
-- 1-page Market Intelligence Report
-- 5-minute live presentation
+- [Market Analysis Dashboard] https://public.tableau.com/app/profile/jinye.qiu/viz/market_analysis_public/MarketConditionsOverview
+- [Competitive Analysis Dashboard] https://public.tableau.com/app/profile/jinye.qiu/viz/competitive_analysis_17887293759710/CompetitiveAnalysis
+- [Los Angeles Market Intelligence Report](reports/Los_Angeles_Market_Intelligence_Report_Week11.pdf)
+- 5-minute final presentation
